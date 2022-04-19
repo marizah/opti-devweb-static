@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="formulaire">
+        <h1><b> Inscription d'un étudiant</b></h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td><label for="prenom"><b>Prenom</b> </label></td>
+                                <td><input type="text" id="prenom" placeholder="Entrer votre preénom " name="prenom" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="nom"><b>Nom</b> </label></td>
+                                <td><input type="text" id="nom" placeholder="Entrer votre nom " name="nom" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="date_naiss"><b>Date de naissance </b> </label></td>
+                                <td><input type="date" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="date_naiss"><b>Lieu de naissance</b> </label></td>
+                                <td><select name="" id="">
+                                        <option value="dakar" selected>-- Choisir --</option>
+                                        <option value="dakar">Dakar</option>
+                                        <option value="thies">Thies</option>
+                                        <option value="st_louis">Saint-Louis</option>
+                                        <option value="autres">Autres</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="sexe"><b>Sexe</b> </label></td>
+                                <td>
+                                    <input type="radio" id="m" name="sexe" checked>
+                                    <label for="m">M</label><br>
+                                    <input type="radio" id="f" name="sexe">
+                                    <label for="f">F</label><br>
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td><label for="hobbies"><b>Hobbies</b> </label></td>
+                                <td>
+                                    <label for="sport"><b>Sport</b></label>
+                                    <input type="checkbox" id="sport">
+                                    <label for="coran"><b>Coaran</b></label>
+                                    <input type="checkbox" id="coran">
+                                    <label for="internet"><b>Internet</b></label>
+                                    <input type="checkbox" id="internzt">
+                                    <label for="theatre"><b>Théatre</b></label>
+                                    <input type="checkbox" id="theatre">
+                                </td>
+                            </tr>
+            
+            
+                            <tr>
+                                <td><label for="nomb-inscri"><b>Nombre d'Inscription</b> </label></td>
+                                <td><input type="range" onmousemove=showinscription(this.value) id="nomb-inscri" min="1" max="10"></td>
+                                <span id="testrange">
+                                     <script>
+                                         function showinscription(val)
+                                         {
+                                            
+                                         }
+                                         
+                                     </script>
+                                </span>
+                            </tr>
+            
+                            <tr>
+                                <td><label for="nombre"><b>Nombre d'enfants</b> </label></td>
+                                <td><input type="number" min="0" max="50"></td>
+                            </tr>
+            
+                            <tr>
+                                <td><label for="mail"><b>Email</b> </label></td>
+                                <td><input type="email" id="mail" placeholder="Entrer votre mail" name="mail" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="tel"><b>Téléphone</b> </label></td>
+                                <td><input type="tel" id="tel" placeholder="Entrer votre numero de telephone " name="tel"></td>
+                            </tr>
+            
+                            <tr>
+                                <td><label for="pwd"><b>Mot de passe</b> </label></td>
+                                <td> <input type="password" id="pwd" placeholder="Entrer votre mot de passe " name="pwd" required>
+                                </td>
+                            </tr>
+            
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <td  valing="top">
+
+                                <label for="avatar">Avatar</label>
+                                <input type="file" id="avatar">
+                                <label for="comment">Commentaire</label>
+                                <input type="text" id="comment">
+                                <input type="submit" value="S'inscrire">
+
+                            </td>
+                        </table>
+                    </td>
+                </tr>
+          
+        </table>
+
+    </div>
+
+
+</body>
+
+</html>
